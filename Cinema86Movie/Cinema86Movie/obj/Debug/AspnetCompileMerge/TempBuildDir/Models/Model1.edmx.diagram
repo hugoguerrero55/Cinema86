@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a73e1e1b33ab47299254e8b50e33dfe1" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Capitulos_Anterior" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Estado" Width="1.5" PointX="2.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Estatus_Usuario" Width="1.5" PointX="2.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Genero" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Pelicula" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Tipo" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_A4B7B0_Cinema86Model.CN86_Usuario" Width="1.5" PointX="5" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="DB_A4B7B0_Cinema86Model.FK_CN86_Capitulos_Anterior_CN86_Pelicula" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_A4B7B0_Cinema86Model.FK_CN86_Usuario_CN86_Estado" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_A4B7B0_Cinema86Model.FK_CN86_Usuario_CN86_Estatus_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_A4B7B0_Cinema86Model.FK_CN86_Pelicula_CN86_Genero" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_A4B7B0_Cinema86Model.FK_CN86_Pelicula_CN86_Tipo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

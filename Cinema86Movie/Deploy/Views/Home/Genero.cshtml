@@ -1,0 +1,211 @@
+﻿@model PagedList.IPagedList<Cinema86Movie.Models.CN86_Pelicula>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = ViewBag.Title;
+    Layout = null;
+
+    //creamos el objeto random y asignamos a una variable string
+    Random r = new Random();
+    string a = r.Next().ToString();
+
+    int _idGenero;
+    string _descripcionGenero = string.Empty;
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema 86 - Blog de Películas, Videos y Programas de TV</title>
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="~/assets/img/favcion.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css" media="all" />
+    <!-- Slick nav CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/slicknav.min.css" media="all" />
+    <!-- Iconfont CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/icofont.css" media="all" />
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/owl.carousel.css">
+    <!-- Popup CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/magnific-popup.css">
+    <!-- Main style CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" media="all" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/responsive.css" media="all" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Page loader -->
+    <div id="preloader"></div>
+    <!-- header section start -->
+    <header class="header">
+        <div class="container">
+            <div class="header-area">
+                <div class="logo">
+                    <a href="index-2.html"><img src="~/assets/img/logo.png" alt="logo" /></a>
+                </div>
+                @if (Request.IsAuthenticated)
+                {
+                    <div class="header-right">
+                        <div class="header-right">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.TextBox("search", null, new { placeholder = "Serie o película ..." })
+                                <button type="submit" name="submit"><i class="icofont icofont-search"></i></button>
+                            }
+                        </div>
+                    </div>
+                }
+                <div class="menu-area">
+                    <div class="responsive-menu"></div>
+                    <div class="mainmenu">
+                        <ul id="primary-menu">
+                            <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                            <li><a class="active" href="@Url.Action("Main", "Home")">Regresar al Índice</a></li>
+                            <li><a href="#">Estrenos</a></li>
+                            <li><a href="#">Mas Vistas</a></li>
+                            @if (Request.IsAuthenticated)
+                            {
+                                if (ViewBag.Generos != null)
+                                {
+                                    <li>
+                                        <a href="#">Géneros <i class="icofont icofont-simple-down"></i></a>
+                                        <ul>
+                                            @foreach (var _item in ViewBag.Generos)
+                                            {
+                                                if (_item.ToString().Length > 0)
+                                                {
+                                                    _idGenero = int.Parse(_item.Split('-')[0]);
+                                                    _descripcionGenero = _item.Split('-')[1];
+                                                    <li><a href="@Url.Action("Genero", "Home", new { _idGenero = _idGenero }, null)">@_descripcionGenero</a></li>
+                                                }
+                                            }
+                                        </ul>
+                                    </li>
+                                }
+                                <li><a href="@Url.Action("LogOut", "Login")">Cerar Sesión</a></li>
+                            }
+                            @*<li><a class="theme-btn" href="@Url.Action("Index", "Registro")"><i class="icofont icofont-ticket"></i> Registrarse</a></li>*@
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-area-content">
+                        @*<h1>Índice de Títulos</h1>*@
+                        @foreach (var genero in Model)
+                        {
+                            if (genero.Id_Genero == ViewBag.CveGenero)
+                            {
+                                <h1>Género - <span>@genero.CN86_Genero.DescripcionGenero.ToUpper()</span> </h1>
+                                break;
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- breadcrumb area end -->
+
+    <section class="portfolio-area pt-60">
+        <div class="container">
+            <div class="row flexbox-center">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <div class="section-title">
+                        <h1><i class="icofont icofont-movie"></i> Estrenos La Semana</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="portfolio-menu">
+                        <ul>
+                            @*<li href="@Url.Action("Main", "Home")" class="active">Regresar al Índice</li>*@
+                            <li data-filter=".soon">Proximamente</li>
+                            <li data-filter=".top">Lo mas Visto</li>
+                            <li data-filter=".released">Cines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            @*Unicamente si el usuario esta autenticado dejara entrar a esta vista*@
+            @if (Request.IsAuthenticated)
+            {
+                <div>
+                    Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+                    @Html.PagedListPager(Model, page =>
+                        Url.Action("Genero", new { page, _idGenero = ViewBag.CveGenero }),
+                        new PagedListRenderOptions
+                        {
+                            LiElementClasses = new string[] { "theme-btn" },
+                            UlElementClasses = new string[] { "slicknav_collapsed slicknav_parent" }
+                        })
+                </div>
+
+                <div class="row portfolio-item">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-3 col-md-4 col-sm-6 soon released">
+                            <div class="single-portfolio">
+                                <div class="single-portfolio-img">
+                                    <img width="100" height="100" src="~/assets/img/portfolio/@item.PathImg.ToString().Substring(20, @item.PathImg.ToString().Length - 20)?a=@a" alt="portfolio" />
+                                    @*<a href="@Url.Action("Index", "Reproductor", new { _idPeli = @Html.DisplayFor(modelItem => item.Id_Pelicula) }, null)" class="popup-youtube">*@
+                                    <a href="@Url.Action("Index", "Reproductor", new { _idPeli = @Html.DisplayFor(modelItem => item.Id_Pelicula) }, null)">
+                                        <i class="icofont icofont-ui-play"></i>
+                                    </a>
+                                </div>
+                                <h4>
+                                    <a href="@item.URL_Trailer">
+                                        <i class="icofont icofont-ui-play"></i>Ver Trailer
+                                    </a>
+                                </h4>
+                                <div class="portfolio-content">
+                                    @*<h2>Boyz II Men</h2>*@
+                                    <h2>@Html.DisplayFor(modelItem => item.Titulo)</h2>
+                                    <div class="review">
+                                        <div class="author-review">
+                                            <i class="icofont icofont-star"></i>
+                                            <i class="icofont icofont-star"></i>
+                                            <i class="icofont icofont-star"></i>
+                                            <i class="icofont icofont-star"></i>
+                                            <i class="icofont icofont-star"></i>
+                                        </div>
+                                        @*<h4>10k votos</h4>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+
+    </section><!-- portfolio section end -->
+    <!-- jquery main JS -->
+    <script src="~/assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!-- Slick nav JS -->
+    <script src="~/assets/js/jquery.slicknav.min.js"></script>
+    <!-- owl carousel JS -->
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <!-- Popup JS -->
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="~/assets/js/isotope.pkgd.min.js"></script>
+    <!-- main JS -->
+    <script src="~/assets/js/main.js"></script>
+</body>

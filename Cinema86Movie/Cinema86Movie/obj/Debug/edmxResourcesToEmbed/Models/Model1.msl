@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_A4B7B0_Cinema86ModelStoreContainer" CdmEntityContainer="DB_A4B7B0_Cinema86Entities">
+    <EntitySetMapping Name="CN86_Capitulos_Anterior">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Capitulos_Anterior">
+        <MappingFragment StoreEntitySet="CN86_Capitulos_Anterior">
+          <ScalarProperty Name="Id_Capitulo" ColumnName="Id_Capitulo" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="URL_Ubicacion" ColumnName="URL_Ubicacion" />
+          <ScalarProperty Name="TorrentName" ColumnName="TorrentName" />
+          <ScalarProperty Name="Id_Pelicula" ColumnName="Id_Pelicula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CN86_Estado">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Estado">
+        <MappingFragment StoreEntitySet="CN86_Estado">
+          <ScalarProperty Name="Id_Estado" ColumnName="Id_Estado" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CN86_Estatus_Usuario">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Estatus_Usuario">
+        <MappingFragment StoreEntitySet="CN86_Estatus_Usuario">
+          <ScalarProperty Name="Id_Estatus" ColumnName="Id_Estatus" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CN86_Genero">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Genero">
+        <MappingFragment StoreEntitySet="CN86_Genero">
+          <ScalarProperty Name="Id_Genero" ColumnName="Id_Genero" />
+          <ScalarProperty Name="DescripcionGenero" ColumnName="DescripcionGenero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CN86_Pelicula">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Pelicula">
+        <MappingFragment StoreEntitySet="CN86_Pelicula">
+          <ScalarProperty Name="Id_Pelicula" ColumnName="Id_Pelicula" />
+          <ScalarProperty Name="Id_Tipo" ColumnName="Id_Tipo" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Resenia" ColumnName="Resenia" />
+          <ScalarProperty Name="Detalles" ColumnName="Detalles" />
+          <ScalarProperty Name="URL_Ubicacion" ColumnName="URL_Ubicacion" />
+          <ScalarProperty Name="TorrentName" ColumnName="TorrentName" />
+          <ScalarProperty Name="PathImg" ColumnName="PathImg" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="Id_Genero" ColumnName="Id_Genero" />
+          <ScalarProperty Name="URL_Trailer" ColumnName="URL_Trailer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CN86_Tipo">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Tipo">
+        <MappingFragment StoreEntitySet="CN86_Tipo">
+          <ScalarProperty Name="Id_Tipo" ColumnName="Id_Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CN86_Usuario">
+      <EntityTypeMapping TypeName="DB_A4B7B0_Cinema86Model.CN86_Usuario">
+        <MappingFragment StoreEntitySet="CN86_Usuario">
+          <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
+          <ScalarProperty Name="Id_Estatus" ColumnName="Id_Estatus" />
+          <ScalarProperty Name="Id_Estado" ColumnName="Id_Estado" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="eMail" ColumnName="eMail" />
+          <ScalarProperty Name="eMail_Confirmed" ColumnName="eMail_Confirmed" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ActivetionCode" ColumnName="ActivetionCode" />
+          <ScalarProperty Name="OTP" ColumnName="OTP" />
+          <ScalarProperty Name="Fecha_Registro" ColumnName="Fecha_Registro" />
+          <ScalarProperty Name="Fecha_Expiracion" ColumnName="Fecha_Expiracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

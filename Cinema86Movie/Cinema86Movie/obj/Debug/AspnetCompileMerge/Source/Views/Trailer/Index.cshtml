@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Cinema86Movie.Models.CN86_Pelicula>
+
+@{
+    Layout = null;
+}
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cinema 86 - Blog de Películas, Videos y Programas de TV</title>
+        <!-- Favicon Icon -->
+        <link rel="icon" type="image/png" href="~/assets/img/favcion.png" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css" media="all" />
+        <!-- Slick nav CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/slicknav.min.css" media="all" />
+        <!-- Iconfont CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/icofont.css" media="all" />
+        <!-- Owl carousel CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/owl.carousel.css">
+        <!-- Popup CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/magnific-popup.css">
+        <!-- Main style CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" media="all" />
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/responsive.css" media="all" />
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <section class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-area-content">
+                            <h2>@ViewBag.Title</h2>
+                            @foreach (var item in Model)
+                            {
+                                @*Vista Para reproducir desde onedrive*@
+                                <iframe width="560"
+                                        height="315"
+                                        src="@Html.DisplayFor(modelItem => item.URL_Trailer)"
+                                        frameborder="0"
+                                        allowfullscreen>
+                                </iframe>
+                            }
+                            <hr />
+                            <div><a class="theme-btn" href="@Url.Action("Main", "Home")">Regresar al Índice</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- jquery main JS -->
+        <script src="~/assets/js/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="~/assets/js/bootstrap.min.js"></script>
+        <!-- Slick nav JS -->
+        <script src="~/assets/js/jquery.slicknav.min.js"></script>
+        <!-- owl carousel JS -->
+        <script src="~/assets/js/owl.carousel.min.js"></script>
+        <!-- Popup JS -->
+        <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Isotope JS -->
+        <script src="~/assets/js/isotope.pkgd.min.js"></script>
+        <!-- main JS -->
+        <script src="~/assets/js/main.js"></script>
+    </body>
+

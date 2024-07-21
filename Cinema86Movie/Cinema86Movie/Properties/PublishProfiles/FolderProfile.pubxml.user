@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Cinema86Movie\Deploy</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/css/bootstrap.min.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/icofont.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/magnific-popup.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/owl.carousel.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/owl.video.play.html">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/responsive.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/slicknav.min.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/css/style.css">
+      <publishTime>07/29/2020 23:48:47</publishTime>
+    </File>
+    <File Include="assets/fonts/icofont7858.eot">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/fonts/icofont7858.svg">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/fonts/icofont7858.ttf">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/fonts/icofont7858.woff">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/author.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/blog-detail.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/breadcrumb.png">
+      <publishTime>07/30/2020 02:21:02</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast1.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast2.html">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast3.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast4.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast5.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast6.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/cast/cast7.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/download.jpg">
+      <publishTime>07/31/2020 12:45:47</publishTime>
+    </File>
+    <File Include="assets/img/favcion.png">
+      <publishTime>07/30/2020 00:16:35</publishTime>
+    </File>
+    <File Include="assets/img/footer-bg.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/hero-area.png">
+      <publishTime>07/30/2020 02:03:25</publishTime>
+    </File>
+    <File Include="assets/img/loader.gif">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/logo.png">
+      <publishTime>07/30/2020 00:21:07</publishTime>
+    </File>
+    <File Include="assets/img/LogoTorrent.jpg">
+      <publishTime>07/31/2020 12:45:47</publishTime>
+    </File>
+    <File Include="assets/img/logo_OLD.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/news/news1.jpg">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/news/news2.jpg">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/news/news3.jpg">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/1.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/10.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/100.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/101.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/102.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/103.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/104.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/105.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/106.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/107.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/108.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/109.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/11.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/110.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/111.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/112.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/113.jpg">
+      <publishTime>07/31/2020 23:30:56</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/114.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/115.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/116.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/117.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/118.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/119.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/12.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/120.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/121.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/122.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/123.jpg">
+      <publishTime>07/27/2020 23:59:40</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/124.jpg">
+      <publishTime>07/27/2020 23:59:40</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/125.jpg">
+      <publishTime>07/27/2020 23:59:40</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/126.jpg">
+      <publishTime>07/27/2020 23:59:40</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/127.jpg">
+      <publishTime>07/27/2020 23:59:40</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/128.jpg">
+      <publishTime>07/31/2020 12:51:58</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/129.jpg">
+      <publishTime>07/31/2020 12:52:46</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/13.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/130.jpg">
+      <publishTime>07/31/2020 12:53:01</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/131.jpg">
+      <publishTime>07/31/2020 12:53:16</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/132.jpg">
+      <publishTime>07/31/2020 12:53:32</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/133.jpg">
+      <publishTime>07/31/2020 12:53:47</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/14.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/15.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/16.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/17.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/18.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/19.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/2.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/20.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/21.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/22.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/23.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/24.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/25.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/26.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/27.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/28.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/29.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/3.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/30.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/31.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/32.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/33.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/34.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/35.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/36.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/37.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/38.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/39.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/4.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/40.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/41.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/42.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/43.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/44.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/45.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/46.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/47.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/48.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/49.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/5.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/50.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/51.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/52.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/53.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/54.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/55.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/56.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/57.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/58.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/59.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/6.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/60.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/61.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/62.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/63.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/64.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/65.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/66.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/67.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/68.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/69.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/7.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/70.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/71.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/72.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/73.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/74.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/75.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/76.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/77.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/78.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/79.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/8.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/80.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/81.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/82.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/83.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/84.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/85.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/86.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/87.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/88.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/89.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/9.jpg">
+      <publishTime>07/27/2020 23:59:38</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/90.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/91.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/92.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/93.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/94.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/95.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/96.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/97.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/98.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/portfolio/99.jpg">
+      <publishTime>07/27/2020 23:59:39</publishTime>
+    </File>
+    <File Include="assets/img/select-icon.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/sidebar/sidebar1.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/sidebar/sidebar2.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/sidebar/sidebar3.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/sidebar/sidebar4.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/slide1.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/slide2.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/slide3.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/slide4.jpg">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/video/video1.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/video/video2.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/video/video3.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/video/video4.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/img/video/video5.png">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.min.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/isotope.pkgd.min.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/jquery.magnific-popup.min.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/jquery.min.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/jquery.slicknav.min.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/main.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="assets/js/owl.carousel.min.js">
+      <publishTime>07/29/2020 23:48:48</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>08/01/2020 22:53:26</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>08/01/2020 22:53:26</publishTime>
+    </File>
+    <File Include="bin/Cinema86Movie.dll">
+      <publishTime>08/01/2020 22:27:25</publishTime>
+    </File>
+    <File Include="bin/Cinema86Movie.pdb">
+      <publishTime>08/01/2020 22:27:25</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/16/2020 20:38:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/16/2020 20:38:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/08/2020 21:52:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>09/30/2013 17:36:38</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>09/30/2013 18:15:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/19/2020 01:51:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/19/2020 01:51:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/19/2020 01:52:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/19/2020 01:52:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/19/2020 01:40:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/19/2020 01:47:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/19/2020 01:51:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/19/2020 01:51:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/19/2020 01:49:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/19/2020 01:49:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/19/2020 01:50:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 01:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 01:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Buffers.dll">
+      <publishTime>07/19/2017 17:01:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/15/2018 20:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Memory.dll">
+      <publishTime>04/17/2019 23:24:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Numerics.Vectors.dll">
+      <publishTime>07/19/2017 17:01:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/15/2018 20:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>11/15/2019 16:37:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/29/2018 23:39:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>06/18/2019 19:08:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/19/2020 01:50:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/19/2020 01:50:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/19/2020 01:40:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/19/2020 01:52:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/19/2020 01:52:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 12:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 11:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 12:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/28/2018 12:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/28/2018 12:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/28/2018 12:04:24</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>07/30/2020 17:41:56</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>07/30/2020 14:36:06</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>08/01/2020 22:53:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.5.1.js">
+      <publishTime>07/30/2020 17:35:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.5.1.min.js">
+      <publishTime>07/30/2020 17:35:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.5.1.min.map">
+      <publishTime>07/30/2020 17:35:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.5.1.slim.js">
+      <publishTime>07/30/2020 17:35:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.5.1.slim.min.js">
+      <publishTime>07/30/2020 17:35:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.5.1.slim.min.map">
+      <publishTime>07/30/2020 17:35:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>07/30/2020 17:35:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>07/30/2020 17:35:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/30/2020 17:34:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/30/2020 17:34:09</publishTime>
+    </File>
+    <File Include="Views/Home/Genero.cshtml">
+      <publishTime>08/01/2020 21:18:47</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/30/2020 17:14:26</publishTime>
+    </File>
+    <File Include="Views/Home/Main.cshtml">
+      <publishTime>08/01/2020 21:01:08</publishTime>
+    </File>
+    <File Include="Views/Login/CambiarPassword.cshtml">
+      <publishTime>08/01/2020 22:30:33</publishTime>
+    </File>
+    <File Include="Views/Login/CambioPasswordEnviado.cshtml">
+      <publishTime>08/01/2020 21:53:06</publishTime>
+    </File>
+    <File Include="Views/Login/CambioPasswordError.cshtml">
+      <publishTime>08/01/2020 21:52:44</publishTime>
+    </File>
+    <File Include="Views/Login/CambioPasswordExitoso.cshtml">
+      <publishTime>08/01/2020 21:51:01</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>08/01/2020 21:19:15</publishTime>
+    </File>
+    <File Include="Views/Login/OlvidoPassword.cshtml">
+      <publishTime>08/01/2020 22:52:58</publishTime>
+    </File>
+    <File Include="Views/Previos/Index.cshtml">
+      <publishTime>08/01/2020 03:55:54</publishTime>
+    </File>
+    <File Include="Views/Previos/NoCapituloPrevio.cshtml">
+      <publishTime>08/01/2020 21:52:58</publishTime>
+    </File>
+    <File Include="Views/Registro/Index.cshtml">
+      <publishTime>08/01/2020 19:49:11</publishTime>
+    </File>
+    <File Include="Views/Registro/Registration.cshtml">
+      <publishTime>08/01/2020 01:50:50</publishTime>
+    </File>
+    <File Include="Views/Registro/UserVerification.cshtml">
+      <publishTime>08/01/2020 01:50:49</publishTime>
+    </File>
+    <File Include="Views/Reproductor/Index.cshtml">
+      <publishTime>08/01/2020 21:10:45</publishTime>
+    </File>
+    <File Include="Views/Shared/_master.cshtml">
+      <publishTime>08/01/2020 20:06:56</publishTime>
+    </File>
+    <File Include="Views/Trailer/Index.cshtml">
+      <publishTime>08/01/2020 21:10:45</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>07/29/2020 23:28:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/01/2020 22:27:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

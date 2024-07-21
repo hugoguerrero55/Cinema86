@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = "~/cinema86/Views/Shared/_master.cshtml";
+}
+
+<!-- breadcrumb area start -->
+<section class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-area-content">
+                    <h2>Capítulos Anteriores</h2>
+                    <div class="alert-success">
+                        <strong>Mensaje..!!</strong>  @ViewBag.Message,  clic aqui para salir. @Html.ActionLink("Regresar a página principal", "Main", "Home")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- breadcrumb area end -->
+
+
+

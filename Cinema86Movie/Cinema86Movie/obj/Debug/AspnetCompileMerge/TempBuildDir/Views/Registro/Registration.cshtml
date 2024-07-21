@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Registro";
+    Layout = "~/Views/Shared/_master.cshtml";
+}
+
+<section class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-area-content">
+                    <h1>Registro de Usuarios Nuevos</h1>
+                    <hr />
+                    <div class="alert-success">
+                        <strong>Mensaje ..!!: </strong> @ViewBag.Message
+                    </div>
+                    </hr />
+                    <div>
+                        <a class="theme-btn" href="@Url.Action("Index", "Home")">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- breadcrumb area end -->

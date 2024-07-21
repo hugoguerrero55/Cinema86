@@ -1,0 +1,99 @@
+﻿@model Cinema86Movie.Models.Login
+
+@{
+    //LOGIN
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_master.cshtml";
+}
+
+
+<!-- breadcrumb area start -->
+<section class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-area-content">
+                    <h1>Ingreso al Sitio</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- breadcrumb area end -->
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <section class="details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="details-content">
+                        <div class="details-overview">
+                            <h2>Formulario de acceso</h2>
+                            <hr />
+                            <p>Capture correo y contraseña luego click en INGRESAR.</p>
+                        </div>
+                        <div class="details-reply">
+                            <form action="#">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="select-container">
+                                            <div class="transformers-left">
+                                                @Html.LabelFor(model => model._eMail, htmlAttributes: new { @class = "control-label col-md-2" })
+                                            </div>
+                                            <div class="transformers-right">
+                                                @Html.EditorFor(model => model._eMail, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model._eMail, "", new { @class = "text-danger" })
+                                                <i class="icofont icofont-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="select-container">
+                                            @*<input type="text" placeholder="Email" />*@
+                                            <div class="transformers-left">
+                                                @Html.LabelFor(model => model._Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                            </div>
+                                            <div class="transformers-right">
+                                                @Html.EditorFor(model => model._Password, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model._Password, "", new { @class = "text-danger" })
+                                                <i class="icofont icofont-ui-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="select-container">
+                                            <div class="transformers-left">
+                                                @Html.LabelFor(model => model.Rememberme, htmlAttributes: new { @class = "control-label col-md-2" })
+                                            </div>
+                                            <div class="transformers-right">
+                                                @Html.EditorFor(model => model.Rememberme)
+                                                @Html.ValidationMessageFor(model => model.Rememberme, "", new { @class = "text-danger" })
+                                                <button type="submit" class="theme-btn">Ingresar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="textarea-container">
+                                            <div class="transformers-left">
+                                                <table>
+                                                    <tr>
+                                                        <td><a class="theme-btn" href="@Url.Action("Index", "Home")">Salir</a></td>
+                                                        @*<td><a class="theme-btn" href="@Url.Action("Index", "Registro")">Registrarse</a></td>*@
+                                                        <td><a class="theme-btn" href="@Url.Action("OlvidoPassword", "Login")">Recuperar Contraseña</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
