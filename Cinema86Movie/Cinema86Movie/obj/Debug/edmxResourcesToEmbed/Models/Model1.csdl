@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_A4B7B0_Cinema86Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CN86_Capitulos_Anterior">
+    <Key>
+      <PropertyRef Name="Id_Capitulo" />
+    </Key>
+    <Property Name="Id_Capitulo" Type="Int32" Nullable="false" />
+    <Property Name="Titulo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="URL_Ubicacion" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="TorrentName" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Pelicula" Type="Int32" />
+    <NavigationProperty Name="CN86_Pelicula" Relationship="Self.FK_CN86_Capitulos_Anterior_CN86_Pelicula" FromRole="CN86_Capitulos_Anterior" ToRole="CN86_Pelicula" />
+  </EntityType>
+  <EntityType Name="CN86_Estado">
+    <Key>
+      <PropertyRef Name="Id_Estado" />
+    </Key>
+    <Property Name="Id_Estado" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CN86_Usuario" Relationship="Self.FK_CN86_Usuario_CN86_Estado" FromRole="CN86_Estado" ToRole="CN86_Usuario" />
+  </EntityType>
+  <EntityType Name="CN86_Estatus_Usuario">
+    <Key>
+      <PropertyRef Name="Id_Estatus" />
+    </Key>
+    <Property Name="Id_Estatus" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CN86_Usuario" Relationship="Self.FK_CN86_Usuario_CN86_Estatus_Usuario" FromRole="CN86_Estatus_Usuario" ToRole="CN86_Usuario" />
+  </EntityType>
+  <EntityType Name="CN86_Genero">
+    <Key>
+      <PropertyRef Name="Id_Genero" />
+    </Key>
+    <Property Name="Id_Genero" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescripcionGenero" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CN86_Pelicula" Relationship="Self.FK_CN86_Pelicula_CN86_Genero" FromRole="CN86_Genero" ToRole="CN86_Pelicula" />
+  </EntityType>
+  <EntityType Name="CN86_Pelicula">
+    <Key>
+      <PropertyRef Name="Id_Pelicula" />
+    </Key>
+    <Property Name="Id_Pelicula" Type="Int32" Nullable="false" />
+    <Property Name="Id_Tipo" Type="Int32" Nullable="false" />
+    <Property Name="Titulo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Resenia" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Detalles" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="URL_Ubicacion" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="TorrentName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PathImg" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Ubicacion" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Id_Genero" Type="Int32" Nullable="false" />
+    <Property Name="URL_Trailer" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CN86_Capitulos_Anterior" Relationship="Self.FK_CN86_Capitulos_Anterior_CN86_Pelicula" FromRole="CN86_Pelicula" ToRole="CN86_Capitulos_Anterior" />
+    <NavigationProperty Name="CN86_Genero" Relationship="Self.FK_CN86_Pelicula_CN86_Genero" FromRole="CN86_Pelicula" ToRole="CN86_Genero" />
+    <NavigationProperty Name="CN86_Tipo" Relationship="Self.FK_CN86_Pelicula_CN86_Tipo" FromRole="CN86_Pelicula" ToRole="CN86_Tipo" />
+  </EntityType>
+  <EntityType Name="CN86_Tipo">
+    <Key>
+      <PropertyRef Name="Id_Tipo" />
+    </Key>
+    <Property Name="Id_Tipo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CN86_Pelicula" Relationship="Self.FK_CN86_Pelicula_CN86_Tipo" FromRole="CN86_Tipo" ToRole="CN86_Pelicula" />
+  </EntityType>
+  <EntityType Name="CN86_Usuario">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Estatus" Type="Int32" Nullable="false" />
+    <Property Name="Id_Estado" Type="Int32" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="eMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="eMail_Confirmed" Type="Boolean" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ActivetionCode" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="OTP" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Fecha_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Expiracion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CN86_Estado" Relationship="Self.FK_CN86_Usuario_CN86_Estado" FromRole="CN86_Usuario" ToRole="CN86_Estado" />
+    <NavigationProperty Name="CN86_Estatus_Usuario" Relationship="Self.FK_CN86_Usuario_CN86_Estatus_Usuario" FromRole="CN86_Usuario" ToRole="CN86_Estatus_Usuario" />
+  </EntityType>
+  <Association Name="FK_CN86_Capitulos_Anterior_CN86_Pelicula">
+    <End Role="CN86_Pelicula" Type="Self.CN86_Pelicula" Multiplicity="0..1" />
+    <End Role="CN86_Capitulos_Anterior" Type="Self.CN86_Capitulos_Anterior" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CN86_Pelicula">
+        <PropertyRef Name="Id_Pelicula" />
+      </Principal>
+      <Dependent Role="CN86_Capitulos_Anterior">
+        <PropertyRef Name="Id_Pelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN86_Usuario_CN86_Estado">
+    <End Role="CN86_Estado" Type="Self.CN86_Estado" Multiplicity="1" />
+    <End Role="CN86_Usuario" Type="Self.CN86_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CN86_Estado">
+        <PropertyRef Name="Id_Estado" />
+      </Principal>
+      <Dependent Role="CN86_Usuario">
+        <PropertyRef Name="Id_Estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN86_Usuario_CN86_Estatus_Usuario">
+    <End Role="CN86_Estatus_Usuario" Type="Self.CN86_Estatus_Usuario" Multiplicity="1" />
+    <End Role="CN86_Usuario" Type="Self.CN86_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CN86_Estatus_Usuario">
+        <PropertyRef Name="Id_Estatus" />
+      </Principal>
+      <Dependent Role="CN86_Usuario">
+        <PropertyRef Name="Id_Estatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN86_Pelicula_CN86_Genero">
+    <End Role="CN86_Genero" Type="Self.CN86_Genero" Multiplicity="1" />
+    <End Role="CN86_Pelicula" Type="Self.CN86_Pelicula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CN86_Genero">
+        <PropertyRef Name="Id_Genero" />
+      </Principal>
+      <Dependent Role="CN86_Pelicula">
+        <PropertyRef Name="Id_Genero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN86_Pelicula_CN86_Tipo">
+    <End Role="CN86_Tipo" Type="Self.CN86_Tipo" Multiplicity="1" />
+    <End Role="CN86_Pelicula" Type="Self.CN86_Pelicula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CN86_Tipo">
+        <PropertyRef Name="Id_Tipo" />
+      </Principal>
+      <Dependent Role="CN86_Pelicula">
+        <PropertyRef Name="Id_Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_A4B7B0_Cinema86Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CN86_Capitulos_Anterior" EntityType="Self.CN86_Capitulos_Anterior" />
+    <EntitySet Name="CN86_Estado" EntityType="Self.CN86_Estado" />
+    <EntitySet Name="CN86_Estatus_Usuario" EntityType="Self.CN86_Estatus_Usuario" />
+    <EntitySet Name="CN86_Genero" EntityType="Self.CN86_Genero" />
+    <EntitySet Name="CN86_Pelicula" EntityType="Self.CN86_Pelicula" />
+    <EntitySet Name="CN86_Tipo" EntityType="Self.CN86_Tipo" />
+    <EntitySet Name="CN86_Usuario" EntityType="Self.CN86_Usuario" />
+    <AssociationSet Name="FK_CN86_Capitulos_Anterior_CN86_Pelicula" Association="Self.FK_CN86_Capitulos_Anterior_CN86_Pelicula">
+      <End Role="CN86_Pelicula" EntitySet="CN86_Pelicula" />
+      <End Role="CN86_Capitulos_Anterior" EntitySet="CN86_Capitulos_Anterior" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN86_Usuario_CN86_Estado" Association="Self.FK_CN86_Usuario_CN86_Estado">
+      <End Role="CN86_Estado" EntitySet="CN86_Estado" />
+      <End Role="CN86_Usuario" EntitySet="CN86_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN86_Usuario_CN86_Estatus_Usuario" Association="Self.FK_CN86_Usuario_CN86_Estatus_Usuario">
+      <End Role="CN86_Estatus_Usuario" EntitySet="CN86_Estatus_Usuario" />
+      <End Role="CN86_Usuario" EntitySet="CN86_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN86_Pelicula_CN86_Genero" Association="Self.FK_CN86_Pelicula_CN86_Genero">
+      <End Role="CN86_Genero" EntitySet="CN86_Genero" />
+      <End Role="CN86_Pelicula" EntitySet="CN86_Pelicula" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN86_Pelicula_CN86_Tipo" Association="Self.FK_CN86_Pelicula_CN86_Tipo">
+      <End Role="CN86_Tipo" EntitySet="CN86_Tipo" />
+      <End Role="CN86_Pelicula" EntitySet="CN86_Pelicula" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
